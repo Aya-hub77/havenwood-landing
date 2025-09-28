@@ -1,0 +1,46 @@
+.about {
+    margin: 20px auto 80px;
+    padding: 0 70px;
+    text-align: center;
+}
+.about h2 {
+    font-family: serif;
+    font-weight: 500;
+    font-size: clamp(30px, 4vw, 50px);
+    margin-bottom: 10px;
+}
+.flex {
+    display: flex;
+    flex-direction: row;
+}
+.flex img {
+    max-width: 400px;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    height: auto;
+    margin-top: 40px;
+}
+.flex h3 {
+    font-family: serif;
+    font-weight: 300;
+    font-size: clamp(15px, 2vw, 25px);
+}
+.flex p {
+    font-size: clamp(15px, 3vw, 20px);
+    padding: 20px 30px 5px 40px;
+}
+@media (max-width: 768px) {
+    .about {
+        padding: 0 40px;
+    }
+    .flex {
+        flex-direction: column;
+    }
+    .flex img {
+        max-width: 300px;
+        margin-top: 20px;
+    }
+    .flex h3 {
+        margin-top: 30px;
+    }
+}

@@ -1,0 +1,41 @@
+.contact {
+    margin: 10px auto 70px;
+    padding: 0 50px;
+    font-family: serif;
+}
+.contact h2 {
+    text-align: center;
+    font-size: clamp(30px, 4vw, 50px);
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+#p {
+    text-align: center;
+    font-size: clamp(16px, 2vw, 20px);
+    padding: 0px 200px;
+    line-height: 1.6;
+}
+.info {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: space-evenly;
+    padding: 40px 0px;
+}
+.info h3 {
+    display: inline;
+    padding-left: 10px;
+    position: relative;
+    top: -5px;
+}
+.info div p {
+    color: rgb(77, 76, 76);
+}
+@media (max-width: 768px) {
+    .info {
+        flex-direction: column;
+    }
+    #p {
+        padding: 0 20px;
+    }
+}
